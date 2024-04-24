@@ -1,0 +1,143 @@
+.Side {
+  position: fixed;
+  width: 240px;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  background-color: rgb(29, 35, 39);
+}
+
+.Main {
+  height: 100vh;
+  margin-inline-start: 240px;
+}
+
+.Loading-wrapper {
+  padding: 12px;
+}
+
+.Create-note-wrapper {
+  padding: 12px;
+}
+
+.Note-button {
+  padding: 12px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border: none;
+  background: none;
+  color: inherit;
+  font-weight: bold;
+  flex: 1;
+}
+
+.note-and-mode {
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon {
+  font-size: 24px; /* adjust as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pin-icon {
+  visibility: hidden;
+}
+
+.Note-button:hover .pin-icon {
+  visibility: visible;
+}
+
+.pin-icon.visible {
+  visibility: visible;
+}
+
+.Note-button-selected {
+  background: rgb(44, 51, 56);
+}
+
+.Note-button:hover {
+  background: rgb(60, 60, 60);
+}
+
+.Note-button-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Delete-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  filter: invert(100%);
+}
+.Delete-button:hover {
+  color: white;
+}
+.App-blur {
+  filter: blur(1px);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.Create-note-wrapper input[type="search"] {
+  width: 100%;
+  padding: 5px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: inherit;
+  color: inherit;
+  font-size: inherit;
+}
+
+.toggle-dark-mode {
+  display: flex;
+  justify-content: space-between;
+  background-color: inherit;
+  border: 0px solid #333;
+  border-radius: 5px;
+  padding: 10px; 
+  cursor: pointer;
+}
+
+.toggle-dark-mode:hover {
+  background-color: #ddd;
+}
+
+.light-mode {
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.light-mode .Side {
+  background-color: #fff;
+}
+
+.light-mode .Note-button-selected {
+  background: #ddd;
+}
+
+.light-mode .Note-button:hover {
+  background: #eee;
+}
+
+.light-mode .Delete-button {
+  filter: invert(0%);
+}
+
+.light-mode .Delete-button:hover {
+  color: #333;
+}
+
+.light-mode .App-blur {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.light-mode .Create-note-wrapper input[type="search"] {
+  background-color: inherit;
+  color: inherit;
+}
